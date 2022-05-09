@@ -80,5 +80,6 @@ print("La cantidad de mayores de edad son: ",cont)
 
 # 9.	Realizar un programa para contar cuantas letras tiene tu nombre.
 
+print("Hola Git")
 # 10.	Crear un programa para una empresa, que pida la cantidad de clientes y luego las almacene
 #       en un arreglo.
