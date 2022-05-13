@@ -1,3 +1,4 @@
+
 # 1.	Crear un programa que imprima los números del 1 al 100.
 
 for i in range(1,101):
@@ -10,6 +11,7 @@ for p in range(0,51,2):
 # 3.	Realizar un programa que imprima los 20 primero números impares.
 for imp in range(1,41,2):
     print(imp)
+
 
 # 4.	Crear un programa que pida un número entero e imprimirlo, si no
 #       ingresa deberá preguntar otra vez por el número entero hasta que ingrese un número positivo.
@@ -31,9 +33,17 @@ for factor1 in range(tabla_desde, tabla_hasta + 1):
 
 # 6.	Realizar un programa para verificar la contraseña, el usuario solo tendrá 3 intentos,
 #       si pasa los intentos imprimir “Sobrepaso todos sus intentos”
+
 import sys  # importando la libreria sys para terminar el script cuando quiera
 
-login = {"Yazmin": "123", "Christian": "123", "Rodrigo": "123", "Gabriel": "123", "Dante": "123", "Adrian": "123"}
+login = {
+    "Yazmin": "123",
+    "Christian": "123",
+    "Rodrigo": "123",
+    "Gabriel": "123",
+    "Dante": "123",
+    "Adrian": "123"
+}
 
 intentos = 0
 
@@ -41,8 +51,7 @@ while intentos < 3:
     usuario = input("Ingrese su nombre de usuario: ")
     password = input("Ingrese su contraseña: ")
 
-    if login.get(
-            usuario) == password:  # con get se busca la clave del diccionario y se compara el valor con la clave(password) ingresada
+    if login.get(usuario) == password:  # con get se busca la clave del diccionario y se compara el valor con la clave(password) ingresada
         print("Bienvenido ", usuario)
         break
     else:
@@ -91,9 +100,9 @@ cantidad = int(input("Ingrese la cantidad de clientes: "))
 clientes = []
 for i in range(cantidad):
     # Recuerda que range comenzará desde 0, así que imprimimos el número solicitado pero + 1
-    numero =input(f"Ingresa el cliente {i + 1}: ")
+    numero =int(input(f"Ingresa el cliente {i + 1}: "))
     # Convertir a entero, pues input regresa una cadena
-    numero = int(numero)
+    # numero = int(numero)
     # Lo agregamos al arreglo con append
     clientes.append(numero)
 
