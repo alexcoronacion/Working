@@ -80,6 +80,24 @@ print("La cantidad de mayores de edad son: ",cont)
 
 # 9.	Realizar un programa para contar cuantas letras tiene tu nombre.
 
-print("Hola Git")
+nombre=input("Ingrese su nombre: ")
+print(len(nombre))
+
 # 10.	Crear un programa para una empresa, que pida la cantidad de clientes y luego las almacene
 #       en un arreglo.
+
+cantidad = int(input("Ingrese la cantidad de clientes: "))
+
+clientes = []
+for i in range(cantidad):
+    # Recuerda que range comenzará desde 0, así que imprimimos el número solicitado pero + 1
+    numero =input(f"Ingresa el cliente {i + 1}: ")
+    # Convertir a entero, pues input regresa una cadena
+    numero = int(numero)
+    # Lo agregamos al arreglo con append
+    clientes.append(numero)
+
+# Finalmente, los mostramos, aunque podrías hacer cualquier otra cosa
+print("Te mostraré los clientes que ingresaste: ")
+for numero in clientes:
+    print(numero)
