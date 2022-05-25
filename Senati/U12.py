@@ -32,6 +32,17 @@ print("El numero mayor es: ", mayor(lista_num))
 # 4.	Crear una función que permita verificar que un número de
 #       teléfono tenga 9 dígitos.
 
+numero=int(input("Ingrese un numero: "))
+cont=0
+while(numero>1):
+    numero=numero/10
+    cont+=1
+if cont>=10:
+    print("El numero tiene mas de 9 digitos")
+elif cont==9:
+    print(f"El numero tiene {cont} digitos")
+else:
+    print("El numero tiene menos de 9 digitos: ",cont)
 
 
 # 5.	Cree una función llamada saludo, que reciba como parámetro
